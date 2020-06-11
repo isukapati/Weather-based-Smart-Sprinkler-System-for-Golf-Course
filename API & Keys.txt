@@ -1,0 +1,32 @@
+Weather api key used
+91b8bbf0faf56e0a647098c3682a90da
+city used:	Hyderabad, IN
+output
+http://api.openweathermap.org/data/2.5/weather?q=Hyderabad,%20IN&appid=7c6512b37f577eec7a634d28afb60706
+
+Organization ID
+8unc2t
+Device Type
+Raspberrypi
+Device ID
+123456
+Authentication Method
+use-token-auth
+Authentication Token
+12345678
+
+apikey:a-8unc2t-adyztkslrs
+auth key:(OH@GfqJtxJi+yE1ym
+
+https://pavankalyanisukapati.eu-gb.mybluemix.net/red/#flow/5591469c.14f948
+
+
+
+hum=30
+        #print(hum)
+        temp = 50
+        #Send Temperature & Humidity to IBM Watson
+        data = { 'Temperature' : temp, 'Humidity': hum }
+        #print (data)
+        def myOnPublishCallback():
+            print ("Published Temperature = %s C" % temp, "Humidity = %s %%" % hum, "to IBM Watson")
